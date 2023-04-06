@@ -19,6 +19,9 @@
         const canvas = document.getElementById('application');
         const app = new pc.Application(canvas);
 
+        var device = pc.Application.getApplication().graphicsDevice;
+        device.maxPixelRatio = 1;
+
         // fill the available space at full resolution
         app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);
         app.setCanvasResolution(pc.RESOLUTION_AUTO);
