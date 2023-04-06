@@ -20,7 +20,7 @@
         const app = new pc.Application(canvas);
 
         var device = pc.Application.getApplication().graphicsDevice;
-        device.maxPixelRatio = 1;
+        device.maxPixelRatio = window.devicePixelRatio;
 
         // fill the available space at full resolution
         app.setCanvasFillMode(pc.FILLMODE_FILL_WINDOW);
