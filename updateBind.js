@@ -47,4 +47,5 @@ UpdateBind.prototype.onMouseDown = function(event){
 UpdateBind.prototype.onTouchStart = function(event){
     this.entity.translate(0,-0.1,0);
     console.log("Generic touch down event");
+    app.resizeCanvas()
 }
