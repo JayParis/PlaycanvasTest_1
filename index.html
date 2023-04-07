@@ -23,7 +23,7 @@
         const app = new pc.Application(canvas, {
             elementInput: new pc.ElementInput(canvas),
             mouse: new pc.Mouse(canvas),
-            touch: !!('ontouchstart' in window) ? new pc.TouchDevice(canvas) : null,
+            touch: new pc.TouchDevice(canvas),
             keyboard: new pc.Keyboard(window),
         });
 
