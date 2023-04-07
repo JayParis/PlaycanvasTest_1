@@ -20,6 +20,7 @@
     <script>
         // create a PlayCanvas application
         const canvas = document.getElementById('application');
+        canvas.style['-webkit-user-select'] = 'none';
         const app = new pc.Application(canvas, {
             elementInput: new pc.ElementInput(canvas),
             mouse: new pc.Mouse(canvas),
